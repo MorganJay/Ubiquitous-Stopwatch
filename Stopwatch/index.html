@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, CSS, JavaScript, Vanilla JS, Stopwatch, Web App, Halfmoon dark-mode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Stopwatch Web App">
+    <meta name="author" content="James Morgan, james.morgan@thebulb.africa">
+    <meta name="description" content="First of many to come in this guided project-based learning approach. Includes a lap function, modelled after the Samsung mobile app.
+Built with HTML5, CSS, and Vanilla JavaScript.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mjstopwatch.netlify.app/">
+    <meta property="og:title" content="Stopwatch Web App">
+    <meta property="og:description" content="First of many to come in this guided project-based learning approach. Includes a lap function, modelled after the Samsung mobile app.
+
+Built with HTML5, CSS, and Vanilla JavaScript.">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/morganjay/image/upload/v1603911412/Stopwatch/Stopwatch-1200x628_gf9ws3.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mjstopwatch.netlify.app/">
+    <meta property="twitter:title" content="Stopwatch Web App">
+    <meta property="twitter:description" content="First of many to come in this guided project-based learning approach. Includes a lap function, modelled after the Samsung mobile app.
+Built with HTML5, CSS, and Vanilla JavaScript.">
+    <meta property="twitter:image"
+        content="https://res.cloudinary.com/morganjay/image/upload/v1603911412/Stopwatch/Stopwatch-1200x628_gf9ws3.jpg">
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/morganjay/image/upload/v1603911409/Stopwatch/1647130_bjr6wy.jpg"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <!-- Primary Meta Tags -->
+    <title>Stopwatch Web App</title>
+</head>
+
+<body>
+    <button class="btn btn-action mt-5 mr-5" type="button" aria-label="Toggle dark mode">
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+    </button>
+    <div class="container">
+        <div class="time--display">
+            <span class="hours button--hide">00:</span>00:00.00
+        </div>
+        <div class="laptimer"></div>
+        <main>
+            <table class="laps-table button--hide">
+                <thead>
+                    <tr>
+                        <th>Lap</th>
+                        <th>Lap time</th>
+                        <th>Overall time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+        <section>
+            <div class="start"><button class="button--start">Start</button></div>
+            <div class="stop"><button class="button--stop button--hide">Stop</button></div>
+            <div class="lap"><button class="button--lap button--hide">Lap</button></div>
+            <div class="resume"><button class="button--resume button--hide">Resume</button></div>
+            <div class="reset"><button class="button--reset button--hide">Reset</button></div>
+        </section>
+    </div>
+
+    <div class="copyright mb-5">With love from <a
+            href="https://github.com/MorganJay/Coding-with-The-Bulb-Africa/tree/master/Stopwatch" target="_blank">Morgan
+            Jay</a> 💘</div>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="resources/js/ripple.js"></script>
+    <script src="resources/js/stopwatch.js"></script>
+</body>
+
+</html>
