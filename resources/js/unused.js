@@ -35,3 +35,40 @@ function indexesOf(array) {
 //     lapminutes = `${lminutes.toString()}`;
 //     break;
 // }
+
+function toggleDarkMode(e) {
+  //if(e.target.click){
+    halfmoon.toggleDarkMode();
+    startBtn.classList.toggle("dark-mode");
+    lapBtn.classList.toggle("dark-mode");
+    stopBtn.classList.toggle("dark-mode");
+    resumeBtn.classList.toggle("dark-mode");
+    resetBtn.classList.toggle("dark-mode");
+    main.classList.toggle("dark-mode");
+    table_head.forEach((head)=> head.classList.toggle("dark-mode"));
+    // document.body.classList.toggle("light-mode");
+    // localStorage.setItem("theme", "dark-mode");
+//  }
+  // else {
+  //   halfmoon.toggleDarkMode();
+  //   startBtn.classList.toggle("dark-mode");
+  //   lapBtn.classList.toggle("dark-mode");
+  //   stopBtn.classList.toggle("dark-mode");
+  //   resumeBtn.classList.toggle("dark-mode");
+  //   resetBtn.classList.toggle("dark-mode");
+  //   main.classList.toggle("dark-mode");
+  //   table_head.forEach((head)=> head.classList.toggle("dark-mode"));
+  //   // document.body.classList.toggle("light-mode");
+  //   localStorage.setItem("theme", "light-mode");
+  // }
+}
+//testing
+// const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+// if (currentTheme) {
+//   document.body.classList.toggle(currentTheme);
+
+//   if (currentTheme === 'dark-mode') {
+//      btn.click = true;
+//   }
+// }
