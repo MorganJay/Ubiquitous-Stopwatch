@@ -33,19 +33,7 @@ const lapBtn = document.querySelector(".button--lap");
 const stopBtn = document.querySelector(".button--stop");
 const btn = document.querySelector(".btn");
 
-//testing
-// const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-// if (currentTheme) {
-//   document.body.classList.toggle(currentTheme);
-
-//   if (currentTheme === 'dark-mode') {
-//      btn.click = true;
-//   }
-// }
-
 function toggleDarkMode(e) {
-  //if(e.target.click){
     halfmoon.toggleDarkMode();
     startBtn.classList.toggle("dark-mode");
     lapBtn.classList.toggle("dark-mode");
@@ -54,21 +42,6 @@ function toggleDarkMode(e) {
     resetBtn.classList.toggle("dark-mode");
     main.classList.toggle("dark-mode");
     table_head.forEach((head)=> head.classList.toggle("dark-mode"));
-    // document.body.classList.toggle("light-mode");
-    // localStorage.setItem("theme", "dark-mode");
-//  }
-  // else {
-  //   halfmoon.toggleDarkMode();
-  //   startBtn.classList.toggle("dark-mode");
-  //   lapBtn.classList.toggle("dark-mode");
-  //   stopBtn.classList.toggle("dark-mode");
-  //   resumeBtn.classList.toggle("dark-mode");
-  //   resetBtn.classList.toggle("dark-mode");
-  //   main.classList.toggle("dark-mode");
-  //   table_head.forEach((head)=> head.classList.toggle("dark-mode"));
-  //   // document.body.classList.toggle("light-mode");
-  //   localStorage.setItem("theme", "light-mode");
-  // }
 }
 
 //Normal time functions
@@ -240,13 +213,10 @@ function removeAttribute_Class() {
   let lapRow = lapTableBody.querySelectorAll("tr");
   minimumLap = GetLapComparison.getMinimumLap();
   lapRow.forEach((row) => {
-    // if (row.children[1].textContent == minimumLap) 
-    // {
   row.classList.remove("min", "max");
   row.children[2].classList.remove("omin");
   row.children[0].removeAttribute("arrow-down");
   row.children[0].removeAttribute("arrow-up");
-   // }
   });
 }
 
