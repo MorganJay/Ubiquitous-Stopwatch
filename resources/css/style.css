@@ -9,6 +9,7 @@ body {
   font-family: "Segoe UI", "Droid Sans", Tahoma, Geneva, Verdana, sans-serif,
     Geneva, Tahoma, sans-serif, "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-display: swap;
   user-select: none;
   overflow: hidden;
   display: grid;
@@ -161,7 +162,7 @@ tr.min > td:first-child {
   content: attr(arrow-up);
   text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
   bottom: 6px;
-  left: 0px;
+  left: 0;
   text-align: center;
   font-size: 19px;
   position: absolute;
@@ -170,14 +171,14 @@ tr.min > td:first-child {
 [arrow-down]::before {
   content: attr(arrow-down);
   bottom: 5px;
-  left: 0px;
+  left: 0;
   text-align: center;
   font-size: 19px;
   position: absolute;
   text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
 }
 
-span.ripple {
+.ripple {
   position: absolute;
   border-radius: 50%;
   transform: scale(0);
@@ -222,8 +223,12 @@ section {
 .copyright {
   font-size: 14px;
   align-self: flex-end;
+  color: black !important;
 }
 
+.copyright a{
+  color: #4618ff !important;
+}
 .start {
   grid-column: 2;
 }
@@ -385,7 +390,7 @@ section {
   }
 
   .copyright {
-    align-self: end;
+    align-self: flex-end;
     grid-row: 13;
   }
 }
